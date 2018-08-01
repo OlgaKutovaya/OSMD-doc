@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Администраторы(администратор)</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="short icon" href="img/index/logo.png">
+</head>
+<body>
+<header class="container-fluid header">
+    <div class="row">
+        <div class="col-md-3 d-flex justify-content-center">
+            <a href="index.html" class="logo"><img src="img/index/logo.png" alt="logo"></a>
+        </div>
+        <div class="col-md-9">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-sign-in-alt icon"></i>
+                        Вход
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="container-fluid wrapper">
+    <div class="row">
+        <aside class="col-md-3 aside">
+            <div class="input-search">
+                <input type="search" name="search" placeholder="Поиск...">
+                <img src="img/index/loupe.png" alt="">
+            </div>
+            <ul class="nav flex-column sidebar-menu">
+                <h4 class="title text-center">Администрирование</h4>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="admin-users.html">
+                        <i class="fas fa-user"></i>
+                        Администраторы
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admin-doc.html">
+                        <i class="fas fa-file-alt"></i>
+                        Документы
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admin-purchases.html">
+                        <i class="far fa-money-bill-alt"></i>
+                        Покупки
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="content col-md-9">
+            <table class="table table-bordered table-content text-center">
+                <thead>
+                <tr>
+                    <th scope="col">№</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Логин</th>
+                    <th scope="col">Права</th>
+                    <th scope="col">Действия</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>ivanov@gmail.com</td>
+                    <td>ivanov</td>
+                    <td>администратор</td>
+                    <td>
+                        <a class="btn-edit-doc" href="#">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <a class="btn-edit-doc" href="#">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+</div> <!--/.wrapper-->
+<footer class="container-fluid footer">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://482.solutions" target="_blank">
+                        &#9400; 482.Solutions, 2018
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

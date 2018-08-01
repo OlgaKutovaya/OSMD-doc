@@ -1,0 +1,168 @@
+// Enter/Registration (Main page)
+
+#modal-log
+	display: none
+	background-color: rgba(61, 61, 61, 0.7)
+	.login
+		width: 500px
+		border: none
+		box-shadow: 0 0 30px 0 #050505
+	.modal-content-header
+		display: flex
+		a.tab
+			width: 50%
+			min-height: 50px
+			font-size: 1.7rem
+			line-height: 3rem
+			text-align: center
+			background: rgba(54, 54, 54, 0.7)
+			color: #ffffff
+			&.active
+				color: #3d3d3d
+				background: #ffffff
+			&:hover
+				text-decoration: none
+			&:first-child
+				border-top-left-radius: 3px
+			&:last-child
+				border-top-right-radius: 3px
+	.modal-body
+		padding: 30px
+	.input-wrapper
+		display: flex
+		margin: 25px 0
+		input
+			margin-left: 10px
+			width: 100%
+			color: #570c0a
+			background: none
+			border: 0
+			border-bottom: 1px solid #595959
+			outline: 0
+			&::placeholder
+				color: #777777
+				font-weight: 100
+			&:focus::placeholder
+				color: transparent
+				transition: 0.2s
+		i
+			line-height: 1.5rem
+	.social-networks
+		display: flex
+		justify-content: space-between
+		margin: auto
+		width: 60px
+		height: 50px
+		font-size: 25px
+		a
+			color: #646464
+		.fb:hover
+			color: #00008c
+		.google:hover
+			color: darken( $base-color, 10% )
+	.enter-forget-password
+		text-decoration: underline
+		display: inline-block
+		font-size: 0.9rem
+		color: #969696
+		&:hover
+			color: #606060
+		i
+			padding-right: 5px
+	.btn-enter
+		width: 50%
+		display: block
+		margin: 0 auto 10px
+
+// forget-password
+
+#modalForgerPassword
+	@extend #modal-log
+
+#modalForgerPasswordSendMail
+	@extend #modal-log
+
+
+// adding new document (Admin page)
+
+#modal
+	display: none
+	background-color: rgba(0, 0, 0, 0.7)
+	.modal-content-admin
+		padding: 10px
+		width: 500px
+	.default-input
+		width: 100%
+		height: 30px
+		border: 1px solid #b7b7b7
+		line-height: 30px
+		box-sizing: border-box
+		margin: 10px 0
+		padding: 0 10px
+		color: #767777
+		font-family: 'Roboto Condensed', sans-serif
+		outline: none
+		&:focus::placeholder
+			color: transparent
+		input[type="number"]
+			width: 170px
+
+// user/ write tech.support
+
+#modalWriteSupport
+  @extend #modal-log
+  .input-support
+    resize: none
+    min-height: 150px
+    margin-left: 10px
+    width: 100%
+    background: none
+    border: 1px solid #e6e6e6
+    outline: 0
+    &::placeholder
+      color: #777777
+      font-weight: 100
+    &:focus::placeholder
+      color: transparent
+      transition: 0.2s
+  .i-doc
+    font-size: 20px
+
+
+
+
+#modalEditDoc
+	@extend #modal
+
+.upload-input
+	color: #808080
+
+textarea
+	resize: none
+	min-height: 100px
+
+// adding new category of document (Admin page)
+
+#modalAddCategory
+	display: none
+	background-color: rgba(0, 0, 0, 0.7)
+	.modal-dialog
+		margin: 7rem auto
+		.modal-content-admin
+			padding: 30px
+			width: 350px
+			input
+				margin-bottom: 10px
+				&:focus::placeholder
+					color: transparent
+			.btn-primary
+				margin-bottom: 10px
+
+
+
+//confirmation of deletion document (Admin page)
+
+#confirmDeletion
+	@extend #modalAddCategory
+
+
